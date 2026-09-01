@@ -1770,8 +1770,8 @@ function downloadResultImage(studentName, topic, dateStr, scoreLabel, feedbackTe
 
   // Nội dung nhận xét
   ctx.textAlign = 'left';
-  ctx.font = '19px -apple-system, "Segoe UI", Arial, sans-serif';
-  ctx.fillStyle = '#1a1a1a';
+  ctx.font = '600 19px -apple-system, "Segoe UI", Arial, sans-serif';
+  ctx.fillStyle = '#000000';
   for (var k = 0; k < wrappedLines.length; k++) {
     ctx.fillText(wrappedLines[k], padding, y);
     y += lineHeight;
@@ -1781,7 +1781,7 @@ function downloadResultImage(studentName, topic, dateStr, scoreLabel, feedbackTe
   // Chân trang: tên thương hiệu, nổi bật
   ctx.textAlign = 'center';
   ctx.font = 'bold 17px -apple-system, "Segoe UI", Arial, sans-serif';
-  ctx.fillStyle = '#2952cc';
+  ctx.fillStyle = '#1a1a1a';
   ctx.fillText('English for Kids - Học qua trò chơi - 0339666883', W / 2, y);
 
   // Tải ảnh về
