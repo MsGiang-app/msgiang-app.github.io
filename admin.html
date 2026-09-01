@@ -1664,7 +1664,7 @@ function wrapCanvasText(ctx, text, maxWidth) {
 }
 
 function downloadResultImage(studentName, topic, dateStr, scoreLabel, feedbackText) {
-  var SCALE = 2; // vẽ ở độ phân giải gấp đôi để zoom/in ra không bị vỡ nét
+  var SCALE = 3; // vẽ ở độ phân giải gấp 3 để zoom/in ra không bị vỡ nét
   var W = 800;
   var padding = 55;
   var contentWidth = W - padding * 2;
@@ -1777,11 +1777,11 @@ function downloadResultImage(studentName, topic, dateStr, scoreLabel, feedbackTe
     y += lineHeight;
   }
 
-  y += 20;
-  // Chân trang: tên thương hiệu, gọn nhẹ
+  y += 25;
+  // Chân trang: tên thương hiệu, nổi bật
   ctx.textAlign = 'center';
-  ctx.font = '15px -apple-system, "Segoe UI", Arial, sans-serif';
-  ctx.fillStyle = '#5a5f70';
+  ctx.font = 'bold 17px -apple-system, "Segoe UI", Arial, sans-serif';
+  ctx.fillStyle = '#2952cc';
   ctx.fillText('English for Kids - Học qua trò chơi - 0339666883', W / 2, y);
 
   // Tải ảnh về
